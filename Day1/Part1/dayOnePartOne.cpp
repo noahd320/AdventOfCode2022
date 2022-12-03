@@ -10,8 +10,8 @@ using namespace std;
 //Function prototypes 
 int main()
 {
-    int checkingTotal, highestTotal, biggestThree;
-    vector <int> topThree;
+    int checkingTotal, highestTotal;
+    vector <int> mostCals;
     string line;
 
     ifstream inFile;
@@ -35,7 +35,7 @@ int main()
             checkingTotal += stoi(line);
         }
         highestTotal = max(highestTotal, checkingTotal); 
-        topThree.push_back(highestTotal);
+        mostCals.push_back(highestTotal);
         
     }
     cout << highestTotal;
