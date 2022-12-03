@@ -35,7 +35,6 @@ int main()
             checkingTotal += stoi(line);
         }
         highestTotal = max(highestTotal, checkingTotal); 
-        mostCals.push_back(highestTotal);
         
     }
     cout << highestTotal;
